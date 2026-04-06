@@ -14,3 +14,10 @@ main{
     background-color: rgba(126, 208, 211, 0.603);
     border-radius: 40px;
 }
+#form_adc{
+    padding-left: 90px;
+    text-align: justify;
+}
+input ,label{
+    margin: 5px;
+}
