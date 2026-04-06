@@ -1,5 +1,10 @@
+body{
+    margin: 0;
+}
 header{
     text-align: center;
+    padding: 20px;
+    background-color: rgba(126, 208, 211, 0.603);
 }
 main{
     margin-top: 10%;
