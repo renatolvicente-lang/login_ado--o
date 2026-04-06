@@ -1,21 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Adoção de cães</title>
 </head>
+
 <body>
     <header>
-        <h1>Pagina de Cadastro</h1>
+        <h2>Formulário de Adoção</h2>
     </header>
-    <main id="form">
-        
+
+
+    <main>
+        <form action="" method="post" id="form_adc">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
+            <br>
+
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" placeholder="@gmail.com">
+            <br>
+
+            <label for="telefone">Digite seu telefone:</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="xxxx-xxxx">
+            <br>
+
+            <label for="cpf">Informe seu CPF:</label>
+            <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx">
+            <br>
+
+            <label for="idade">Informe sua idade:</label>
+            <input type="number" name="idade" id="idade" >
+            <br>
+
+            <label for="moradia">Moradia:</label>
+            <select name="moradia" id="moradia">
+                <option value="">Selecione</option>
+                <option value="casa">Casa</option>
+                <option value="apt">Apartamento</option>
+            </select>
+            <br>
+            <label for="quintal">Possui quintal? </label>
+            <input type="radio" name="quintal" id="quintal" value="Sim">Sim
+            <input type="radio" name="quintal" id="quintal" value="Não">Não
+            <br>
+
+            <label for="pet">Ja possuia um pet antes?</label>
+            <input type="radio" name="pet" id="pet" value="Sim">Sim
+            <input type="radio" name="pet" id="pet" value="Não">Não
+
+            <br>
+            <button type="submit">Enviar</button>
+            <div id="resultado">
+            </div>
+        </form>
     </main>
-
-
-
 
 
 
@@ -25,4 +67,5 @@
 
     <script src="scripts/script.js"></script>
 </body>
+
 </html>
