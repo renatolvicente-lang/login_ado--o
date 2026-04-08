@@ -20,7 +20,9 @@ document.getElementById("form_adc").addEventListener("submit", function(e){
     if(nome.length < 3){//Verifica o tamanho do nome
         return alert("Nome invalido!!");
     }
-
+    if(cpf.length == 0){
+        return alert("CPF invalido");
+    }
     if(idade.length < 2 && idade < 18){
         return alert("Idade invalida");
     }
