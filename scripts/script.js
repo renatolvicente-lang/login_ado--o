@@ -8,7 +8,7 @@ document.getElementById("form_adc").addEventListener("submit", function(e){
     let telefone = document.getElementById("telefone").value;
     let cpf = document.getElementById("cpf").value;
     let idade = document.getElementById("idade").value;
-    
+
 
 
 
@@ -20,6 +20,11 @@ document.getElementById("form_adc").addEventListener("submit", function(e){
     if(nome.length < 3){//Verifica o tamanho do nome
         return alert("Nome invalido!!");
     }
+
+    if(idade.length < 2){
+        return alert("Idade invalida");
+    }
+
 
     document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!!<br>" + "Nome: " + nome;// exibe o resultado dentro da div com id de resultado
 
