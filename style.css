@@ -3,11 +3,17 @@
 }
 body{
     margin: 0;
+    background-image: url(assets/papel_de_parede_adesivo_patinhas_de_cachorro_animais_ossos_preto_branco_e_azul_ssan_039_1993_1_e1f382dc9f94b980e854d23c24d4af70.webp);
 }
 header{
-    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
     background-color: rgba(126, 208, 211, 0.336);
+}
+header img{
+    width: 100px;
 }
 main{
     text-align: center;
