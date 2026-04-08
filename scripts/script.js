@@ -7,6 +7,12 @@ document.getElementById("form_adc").addEventListener("submit", function(e){
     let moradia = document.getElementById("moradia").value;
     let telefone = document.getElementById("telefone").value;
     let cpf = document.getElementById("cpf").value;
+    let idade = document.getElementById("idade").value;
+    
+
+
+
+
 
     //pegar campo pelo seletor
     let quintal = document.querySelector('input["quintal"]:checked');
