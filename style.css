@@ -10,6 +10,7 @@ header{
     background-color: rgba(126, 208, 211, 0.336);
 }
 main{
+    text-align: center;
     padding: 50px;
     margin: auto;
     max-width: 800px;
@@ -19,14 +20,14 @@ main{
 .flex{
     display: flex;
 }
-#form_adc{
-    justify-content: center;
-    padding-left:  90px;
-}
-input{
+
+input, select{
     margin: 7px;
     padding: 10px;
     border-radius: 10px;
+}
+textarea{
+    max-width: 300px;
 }
 button{
     margin: 7px;
