@@ -21,7 +21,7 @@ document.getElementById("form_adc").addEventListener("submit", function(e){
         return alert("Nome invalido!!");
     }
 
-    if(idade.length < 2 && idade <= 18){
+    if(idade.length < 2 && idade < 18){
         return alert("Idade invalida");
     }
 
