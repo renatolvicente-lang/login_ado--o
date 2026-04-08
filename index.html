@@ -10,32 +10,36 @@
 
 <body>
     <header>
-        <h1>Num kidito Pets</h1>
+        <h1>Nuquidito Pets</h1>
     </header>
 
 
     <main>
         <form action="" method="post" id="form_adc">
+
             <label for="nome"><b>Nome:</b></label><br>
             <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo">
-            
+
             <br>
             <label for="email"><b>Informe seu E-mail</b></label><br>
             <input type="email" name="email" id="email" placeholder="@gmail.com">
-            
+
             <br>
+
+
 
             <label for="telefone"><b>Digite seu telefone:</b></label><br>
             <input type="tel" name="telefone" id="telefone" placeholder="xxxx-xxxx">
             <br>
-
             <label for="cpf"><b>Informe seu CPF:</b></label><br>
             <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx">
             <br>
 
+
             <label for="idade"><b>Informe sua idade:</b></label><br>
-            <input type="number" name="idade" id="idade" >
+            <input type="number" name="idade" id="idade">
             <br>
+
 
             <label for="moradia"><b>Moradia:</b></label><br>
             <select name="moradia" id="moradia">
@@ -49,27 +53,32 @@
             <input type="radio" name="quintal" id="quintal" value="Não">Não
             <br>
 
+
+
             <label for="pet"><b>Ja possuia um pet antes?</b></label><br>
             <input type="radio" name="pet" id="pet" value="Sim">Sim
             <input type="radio" name="pet" id="pet" value="Não">Não
-
             <br>
-            
+
             <label for="temp"><b>Quantas horas o animal ficará sozinho por dia: </b></label><br>
             <input type="time" name="temp" id="temp">
-            
+
             <br>
+
             <label for="mtv_adocao"><b>Motivo da Adoção:</b></label><br>
             <textarea name="mtv_adocao" id="mtv_adocao"></textarea>
             <br>
-            
+
+            <br>
+            <div id="resultado"></div>
+
             <label for=""><b><a href="">termos</a> de responsabilidade: </b></label>
             <input type="checkbox" name="mtv_adocao" id="mtv_adocao">Aceito
+
             <br>
+
             <button type="submit">Enviar</button>
             <button type="reset">Limpar</button>
-            <div id="resultado">
-            </div>
         </form>
     </main>
 
