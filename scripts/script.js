@@ -17,21 +17,28 @@ document.getElementById("form_adc").addEventListener("submit", function(e){
     let pet = document.querySelector('input[name="pet"]:checked');
      
     if(nome.length < 3) return alert("Nome invalido!!");//Verifica o tamanho do nome
+
+    if(!email.includes('@')) return alert("Email deve conter @");// verifica se possui o arroba
+    
+    if(telefone.length < 8) return alert("Telefone obrigatório");
     
     if(cpf.length < 11 ) return alert("CPF obrigatório");
     
-    if(telefone.length < 8) return alert("Telefone obrigatório");
 
     if(idade.length < 2 && idade < 18) return alert("Idade invalida");
 
     if(cidade.length == 0) return alert("Cidade obrigatoria");
 
-    if(!email.includes('@')) return alert("Email deve conter @");// verifica se possui o arroba
-
     if(moradia == "" || moradia === "0") return alert("O tipo de moradia deve estar selecionado");// verifica se moradia está selecionada
 
+    if(!quintal)return alert("O campo sobre quintal tem que ser selecionado");
+    
+    if(!pet) return alert("O campo sobre pet tem que ser selecionado");
+        
     if(tempo === 1) return alert("Tem que ser um valor valido");
 
+    if(mtv_adocao.length < 10) return alert("Deve possuir mais de 10 caracteres");
+    
     document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!!<br>" + "Nome: " + nome;// exibe o resultado dentro da div com id de resultado
 
 
