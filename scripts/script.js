@@ -15,6 +15,7 @@ document.getElementById("form_adc").addEventListener("submit", function(e){
     //pegar campo pelo seletor
     let quintal = document.querySelector('input[name="quintal"]:checked');
     let pet = document.querySelector('input[name="pet"]:checked');
+    let termo = document.querySelector('input[name ="termos"]:checked');
      
     if(nome.length < 3) return alert("Nome invalido!!");//Verifica o tamanho do nome
 
@@ -24,7 +25,6 @@ document.getElementById("form_adc").addEventListener("submit", function(e){
     
     if(cpf.length < 11 ) return alert("CPF obrigatório");
     
-
     if(idade.length < 2 && idade < 18) return alert("Idade invalida");
 
     if(cidade.length == 0) return alert("Cidade obrigatoria");
@@ -38,7 +38,11 @@ document.getElementById("form_adc").addEventListener("submit", function(e){
     if(tempo === 1) return alert("Tem que ser um valor valido");
 
     if(mtv_adocao.length < 10) return alert("Deve possuir mais de 10 caracteres");
-    
+
+    if(!termo) return alert("Aceito os termo de responsabilidade antes de enviar");
+
+
+
     document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!!<br>" + "Nome: " + nome;// exibe o resultado dentro da div com id de resultado
 
 
