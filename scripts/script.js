@@ -20,7 +20,7 @@ document.getElementById("form_adc").addEventListener("submit", function(e){
     
     if(cpf.length < 11 ) return alert("CPF obrigatório");
     
-    if(telefone.length == 0) return alert("Telefone obrigatório");
+    if(telefone.length < 8) return alert("Telefone obrigatório");
 
     if(idade.length < 2 && idade < 18) return alert("Idade invalida");
 
@@ -30,7 +30,7 @@ document.getElementById("form_adc").addEventListener("submit", function(e){
 
     if(moradia == "" || moradia === "0") return alert("O tipo de moradia deve estar selecionado");// verifica se moradia está selecionada
 
-    
+    if(tempo === 1) return alert("Tem que ser um valor valido");
 
     document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!!<br>" + "Nome: " + nome;// exibe o resultado dentro da div com id de resultado
 
