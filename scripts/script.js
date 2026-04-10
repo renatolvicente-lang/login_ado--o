@@ -23,6 +23,8 @@ document.getElementById("form_adc").addEventListener("submit", function(e){
 
     if(cidade.length == 0) return alert("Cidade obrigatoria");
 
+    if(email.includes('@')) return alert("Email deve conter @")
+
     
     document.getElementById("resultado").innerHTML = "Cadastro realizado com sucesso!!<br>" + "Nome: " + nome;// exibe o resultado dentro da div com id de resultado
 
